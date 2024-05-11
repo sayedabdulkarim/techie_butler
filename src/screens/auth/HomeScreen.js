@@ -15,7 +15,7 @@ const HomeScreen = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const { data, error, isLoading } = useGetAllCharactersQuery();
 
-  // Calculate the total number of pages
+  // Calculate the total number of pages.
   const totalItems = data ? data.length : 0;
   const totalPages = Math.ceil(totalItems / pageSize);
 
@@ -31,6 +31,7 @@ const HomeScreen = () => {
 
   useEffect(() => {
     if (currentData) {
+      // console.log({})
       dispatch(setCharactersList(currentData));
     }
   }, [currentData, dispatch]);
