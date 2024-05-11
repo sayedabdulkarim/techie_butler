@@ -1,0 +1,50 @@
+.pagination-bar {
+    left: 0;
+    position: fixed;
+    background: transparent;
+    top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .pagination-container{
+        display: flex;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        background: hsla(0, 0%, 100%, .212);
+        border: 1px solid #fff;
+        border-radius: 0.75rem;
+        padding: 10px 20px;
+        // width: 40%;
+        // margin: 0 auto;
+    
+        .button_rounded {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            color: white;
+            background: orange;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .button-disabled {
+            cursor: no-drop;
+            background-color: #eee;
+            color: black;
+        }
+
+        .pagination-item  {
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+    }
+
+}
